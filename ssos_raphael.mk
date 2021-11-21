@@ -13,16 +13,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common Arrow stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/ssos/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_raphael
+PRODUCT_NAME := ssos_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi K20 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
-DEVICE_MAINTAINER := TH779, kubersharma001
+DEVICE_MAINTAINER := appleapplegaming
 
 PRODUCT_CHARACTERISTICS := nosdcard
 

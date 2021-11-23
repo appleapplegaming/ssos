@@ -43,7 +43,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/raphael
 TARGET_KERNEL_CONFIG := raphael_user_defconfig
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-#SELINUX_IGNORE_NEVERALLOWS := true
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile

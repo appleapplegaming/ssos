@@ -15,10 +15,10 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := octavi_raphael
+PRODUCT_NAME := raphael_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
@@ -29,5 +29,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# OctaviOS stuff
-OCTAVI_BUILD_TYPE := Official
+# ShapeShiftOS stuff
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.ssos.cpu=SD855
+
+#SSOS_BUILD_TYPE := UNOFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USES_BLUR := true
+EXTRA_FOD_ANIMATIONS := true

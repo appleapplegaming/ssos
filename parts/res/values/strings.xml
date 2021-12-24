@@ -130,7 +130,4 @@
 
     <!-- Proximity sensor -->
     <string name="proximity_sensor_title">Proximity sensor</string>
-
-     <!-- QS tile title -->
-    <string name="dirac_qs_tile_title">Dirac sound</string>
 </resources>
